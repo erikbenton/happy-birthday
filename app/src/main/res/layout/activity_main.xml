@@ -6,13 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.happybirthday.MainActivity">
 
+    <ImageView
+        android:id="@+id/birthday_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/androidparty"/>
+
     <TextView
+        android:id="@+id/to_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Happy Birthday, Alex!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:text="Happy Birthday, Alex!" />
+
+    <TextView
+        android:id="@+id/from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:text="From, Erik" />
 
 </RelativeLayout>
